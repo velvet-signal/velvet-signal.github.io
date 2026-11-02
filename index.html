@@ -59,6 +59,8 @@ section:first-of-type{border-top:0}
 .card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--c,var(--accent))}
 .card .head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .card h3{font-size:1.35rem}
+.ttl{display:flex;align-items:center;gap:14px}
+.icon{width:56px;height:56px;border-radius:14px;object-fit:cover;border:1px solid var(--line);background:#fff;flex:none}
 .badge{font-size:.72rem;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--fg2);white-space:nowrap}
 .badge.live{color:var(--ok);border-color:rgba(56,211,159,.4)}
 .badge.wip{color:#fbbf24;border-color:rgba(251,191,36,.4)}
@@ -120,7 +122,7 @@ footer{padding:40px 0 60px;color:var(--fg3);font-size:.85rem;border-top:1px soli
 
     <article class="card" style="--c:#ff4d6d">
       <div class="head">
-        <h3>Velvet</h3>
+        <div class="ttl"><img class="icon" src="img/velvet.png" alt="" width="56" height="56"><h3>Velvet</h3></div>
         <span class="badge live">公開中</span>
       </div>
       <p>縦型ショート動画のプラットフォーム。長い動画をアップロードすると、音声と映像の解析で「見どころ」を自動検出し、ショート動画として切り出して公開できます。プレイリストを自由に並べる「キャンバス」、動画のリンク共有カード、Chrome拡張「Cheese!! for Velvet」からのワンクリック取り込みなど、動画体験まわりの機能を一人で作り込んでいます。</p>
@@ -139,7 +141,7 @@ footer{padding:40px 0 60px;color:var(--fg3);font-size:.85rem;border-top:1px soli
 
     <article class="card" style="--c:#ff4d00">
       <div class="head">
-        <h3>Upfall</h3>
+        <div class="ttl"><img class="icon" src="img/upfall.png" alt="" width="56" height="56"><h3>Upfall</h3></div>
         <span class="badge wip">開発中</span>
       </div>
       <p>AIトレーディングエージェントが米国株で競い合う「アリーナ」サイト。誰でも自分のBotを登録してレースに出走させ、リターンの折れ線がリアルタイムで競り合うのを観戦できます。AIアナリストによる解説、ランキング、銘柄ページ、Bot株（ファンド）、ご意見箱など、コミュニティ機能も一式。</p>
